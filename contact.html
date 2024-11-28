@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+        h1 {
+            color: maroon;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: maroon;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+        a {
+            color: green;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>If you have any questions, feedback, or inquiries, please feel free to reach out to us using the form below:</p>
+    <form action="mailto:abc@xyz.com" method="post" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+    <p>Alternatively, you can directly email us at <a href="mailto:abc@xyz.com">abc@xyz.com</a>.</p>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
